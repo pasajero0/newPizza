@@ -1,0 +1,678 @@
+body {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+.navbar {
+	font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #3f4043;
+    position: relative;
+}
+
+.navbar-title {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 19px;
+}
+
+.navbar-block {
+    background-color: #1a2024;
+}
+
+.fa-bars, .fa-times {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.navbar-block i{
+    display: block;
+    padding: 15px;
+    margin: 0 auto;
+    width: 17px;
+}
+.display-none {
+	display: none;
+}
+.navbar-menu-block {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
+    width: 50%;
+}
+
+
+.navbar-menu-item {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e9e9e9;
+    box-shadow: inset 0px 1px 3px -3px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-menu-link {
+    display: block;
+    width: 100%;
+    color: #444;
+    font-size: 12px;
+    padding: 14px 0px 14px 12px;
+}
+.navbar-menu-item:hover,
+.navbar-menu-item:active {
+    background-color: #f5f5f5;
+}
+
+.main-logo-link {
+    display: none;
+}
+
+.header-section {
+    background-image: url("../images/header-1200.png");
+    background-size: cover;
+    padding: 19px 0px 170px 20px;
+    margin-bottom: 4px;
+}
+
+.header-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 11px;
+    line-height: 1.3;
+}
+
+.header-web-address {
+    color: #a6d6e0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.products {
+    margin-bottom: 26px;
+}
+
+.products-block {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.product-card {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 80px);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.first-product-card {
+    background-image: url("../images/pizza-1200px.png");
+    background-position: bottom;
+}
+
+.second-product-card {
+    background-image: url("../images/salads-1200px.png");
+    background-position: bottom;
+}
+
+.third-product-card {
+    background-image: url("../images/desserts-1200px.png");
+    background-position: 50%, 50%;
+}
+
+.product-link {
+    width: 80px;
+    background-color: #acd9ad;
+    padding: 27px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-link::after {
+    content: ">";
+    width: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.dishes-menu {
+    margin-bottom: 48px;
+}
+
+.dishes-menu-block {
+    display: flex;
+    padding: 0px 9px 0px 10px;
+    margin-bottom: 11px;
+}
+
+.dishes-menu-title {
+    color: #3f4043;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.dishes-menu-parapraph {
+    color: #cbcdce;
+    font-size: 10px;
+}
+
+.dishes-menu-logo {
+    display: none;
+}
+
+.dishes-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-dishes-block {
+    width: 100%;
+}
+
+.main-dishes-heading {
+    background-color: #3d3e41;
+    color: #acd9ad;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 12px 0px 11px 19px;
+    margin-bottom: 11px;
+}
+
+.drinks-heading {
+    background-color: #add9ae;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 12px 0px 11px 19px;
+    margin-bottom: 11px;
+}
+
+.standard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 19px;
+    margin-bottom: 16px;
+}
+
+.standard-title {
+    color: #3f4043;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.fa-stroopwafel {
+    font-size: 25px;
+    color: #a1d4a3;
+    background-color: #fff;
+}
+
+.dishes-standard-container {
+    padding: 0px 19px 0px 25px;
+    margin-bottom: 16px;
+}
+
+.dishes-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3f4043;
+    margin-bottom: 9px;
+}
+
+.dishes-type-name {
+    color: #3f4043;
+    font-size: 13px;
+    position: relative;
+}
+
+.dishes-type-name::before {
+    content: "";
+    background-color: #3f4043;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: -2px;
+    left: -4px;
+    position: relative;
+    display: inline-block;
+}
+
+.dishes-type-price {
+    color: #3f4043;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.dishes-type-description {
+    color: #3f4043;
+    font-size: 9px;
+    margin-bottom: 9px;
+}
+
+.fa-wine-glass-alt {
+    font-size: 25px;
+    color: #a1d4a3;
+    background-color: #fff;
+}
+
+.fa-coffee {
+    font-size: 25px;
+    color: #a1d4a3;
+    background-color: #fff;
+}
+
+.fa-beer {
+    font-size: 25px;
+    color: #a1d4a3;
+    background-color: #fff;
+}
+
+.footer {
+	font-family: 'Montserrat', sans-serif;
+    background-color: #acd8ad;
+    padding: 13px;
+}
+
+.footer img {
+    display: none;
+}
+
+.footer-text {
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media (min-width: 640px) {
+    .navbar-title {
+        font-size: 24px;
+        margin-left: 38px;
+    }
+    .navbar-block i {
+        padding: 23px 26px;
+        width: 20px;
+    }
+    .fa-bars, .fa-times {
+        font-size: 28px;
+        margin: 0px 26px;
+    }
+    .navbar-menu-block {
+        top: 74px;
+        width: 45%;
+    }
+    .navbar-menu-link {
+        font-size: 14px;
+    }
+    .header-section {
+        padding: 30px 0px 197px 37px;
+        margin-bottom: 6px;
+    }
+
+    .header-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .header-web-address {
+        font-size: 24px;
+    }
+    .products {
+        margin-bottom: 45px;
+    }
+
+    .product-card {
+        font-size: 36px;
+        width: calc(100% - 150px);
+    }
+    .product-link {
+        padding: 67px 0px;
+        width: 150px;
+    }
+
+    .product-link::after {
+        font-size: 25px;
+    }
+
+    .dishes-menu {
+        margin-bottom: 117px;
+    }
+
+    .dishes-menu-block {
+        padding: 0px 15px 0px 22px;
+    }
+
+    .dishes-menu-title {
+        font-size: 35px;
+        margin-bottom: 9px;
+    }
+
+    .dishes-menu-parapraph {
+        font-size: 20px;
+    }
+
+    .main-dishes-heading {
+        font-size: 40px;
+        padding: 23px 0px 23px 38px;
+        margin-bottom: 22px;
+    }
+
+    .drinks-heading {
+        font-size: 40px;
+        padding: 23px 0px 23px 38px;
+        margin-bottom: 22px;
+    }
+
+    .standard-heading {
+        padding: 0px 36px;
+        margin-bottom: 36px;
+    }
+
+    .standard-title {
+        font-size: 30px;
+    }
+
+    .fa-stroopwafel {
+        font-size: 48px;
+    }
+
+    .fa-wine-glass-alt {
+        font-size: 48px;
+    }
+
+    .fa-coffee {
+        font-size: 48px;
+    }
+
+    .fa-beer {
+        font-size: 48px;
+    }
+
+    .dishes-standard-container {
+        padding: 0px 36px;
+    }
+
+    .dishes-type {
+        margin-bottom: 16px;
+    }
+
+    .dishes-type-name {
+        font-size: 27px;
+    }
+
+    .dishes-type-name::before {
+        top: -6px;
+    }
+
+    .dishes-type-price {
+        font-size: 27px;
+    }
+
+    .dishes-type-description {
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
+
+    .footer {
+        padding: 28px;
+    }
+
+    .footer-text {
+        font-size: 17px;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .navbar {
+        height: 97px;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .navbar-block .fa-bars,
+    .navbar-block .fa-times {
+        display: none;
+    }
+
+    .navbar-block:hover .fa-times {
+        display: none;
+    }
+
+    .navbar-menu-block {
+        display: inline-block;
+        box-shadow: none;
+        width: 100%;
+        top: 24px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .navbar-menu-item {
+        background-color: #3f4043;
+        border-bottom: 1px solid transparent;
+        margin-right: 30px;
+    }
+
+    .navbar-menu-item:hover {
+        background-color: #3f4043;
+    }
+
+    .navbar-menu-link {
+        color: #ececec;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .main-logo-link {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .header-section {
+        padding: 64px 0px 260px 30px;
+    }
+
+    .header-title {
+        font-size: 54px;
+    }
+
+    .header-web-address {
+        margin-top: 57px;
+        font-size: 34px;
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .products-block {
+        height: 32vw;
+        width: 100vw;
+    }
+
+    .product-card {
+        padding: 145px 0px 148px;
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .product-link {
+        display: none;
+    }
+
+    .dishes-menu {
+        margin-bottom: 84px;
+    }
+
+    .dishes-menu-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 29px 0px 31px;
+    }
+
+    .dishes-menu-title {
+        font-size: 34px;
+    }
+
+    .dishes-menu-logo {
+        display: inline-block;
+    }
+
+    .dishes-menu-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-dishes-block {
+        width: 50vw;
+    }
+
+    .main-dishes-heading {
+        font-size: 34px;
+        padding: 23px 0px 23px 18px;
+        margin-bottom: 29px;
+    }
+
+    .drinks-heading {
+        font-size: 34px;
+        margin-bottom: 29px;
+    }
+
+    .standard-title {
+        font-size: 24px;
+    }
+
+    .dishes-standard-container {
+        margin-bottom: 37px;
+    }
+
+    .dishes-type-name {
+        font-size: 24px;
+    }
+
+    .dishes-type-description {
+        margin-bottom: 28px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 38px;
+    }
+
+    .footer img {
+        display: inline-block;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-menu {
+        margin-left: 37px;
+    }
+
+    .navbar-menu-item {
+        margin-right: 32px;
+    }
+
+    .navbar-menu-link {
+        font-size: 15px;
+    }
+
+    .header-section {
+        padding: 58px 0px 379px 37px;
+    }
+
+    .header-title {
+        font-size: 62px;
+    }
+
+    .header-web-address {
+        margin-top: 53px;
+        font-size: 38px;
+    }
+
+    .popular-product-card {
+        padding: 182px 0px 178px;
+        font-size: 43px;
+    }
+
+    .dishes-menu {
+        margin-bottom: 45px;
+    }
+
+    .dishes-menu-title {
+        font-size: 40px;
+    }
+
+    .main-dishes-heading {
+        font-size: 40px;
+        margin-bottom: 38px;
+    }
+
+    .drinks-heading {
+        font-size: 40px;
+        padding: 23px 0px 23px 18px;
+        margin-bottom: 38px;
+    }
+
+    .standard-heading {
+        padding: 0px 25px;
+    }
+
+    .standard-title {
+        font-size: 30px;
+    }
+
+    .fa-stroopwafel {
+        font-size: 39px;
+    }
+
+    .fa-wine-glass-alt {
+        font-size: 39px;
+    }
+
+    .fa-coffee {
+        font-size: 39px;
+    }
+
+    .fa-beer {
+        font-size: 39px;
+    }
+
+    .dishes-standard-container {
+        padding: 0px 25px;
+        margin-bottom: 32px;
+    }
+
+
+    .dishes-type-name {
+        font-size: 27px;
+    }
+
+    .dishes-type-description {
+        margin-bottom: 22px;
+    }
+}
